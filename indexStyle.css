@@ -15,7 +15,7 @@ body {
 :root {
     --main-color: #235ef1;
     --shade-color: #C9B8EB;
-    --grey-color: #EBEBEB;
+    --grey-color: #b6b6b6;
 }
 
 .topnavbar {
@@ -51,6 +51,7 @@ body {
 .navLinks li {
     font-size: 1.3em;
     font-weight: bold;
+    font-family: "Times New Roman", "Verdana";
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -114,7 +115,6 @@ body {
 
 #banner .title {
     font-size: 5rem;
-    margin-left: 15%;
     font-weight: bold;
     font-family: 'Cooper';
     color: #FFFFFF;
@@ -122,8 +122,96 @@ body {
 
 #banner .subtitle {
     font-size: 2rem;
-    margin-left: 15%;
     font-weight: bold;
     font-family: 'Trebuchet MS', "Helvetica";
     color: #FFFFFF;
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+}
+
+.container .title {
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Cooper';
+    color: var(--main-color);
+    border-bottom: #235ef1 2px solid;
+}
+
+#blogs #columns3 {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+}
+
+#blogs .row {
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    margin: auto;
+    width: 90%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#blogs .rowItem {
+    width: 500px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#blogs .rowItem * {
+    font-family: "Cambria", Georgia, serif;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+#blogs .rowItem img {
+    width: 500px;
+    height: 338px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+#blogs .rowItem .title {
+    width: fit-content;
+    font-size: 2rem;
+    color: #000000;
+    border: none;
+}
+
+#blogs .rowItem .itemMeta {
+    color: var(--grey-color);
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+#blogs .rowItem .itemDescription {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+#blogs .rowItem .readMore {
+    padding-left: 0;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 20px;
+    width: fit-content;
+    border-bottom: #000000 double 1px;
+    border-top: #000000 double 1px;
+    background-color: #FFFFFF;
 }
