@@ -56,7 +56,7 @@ body {
     padding-right: 30px;
 }
 
-.navlinks li a {
+.navLinks li a {
     display: block;
     text-decoration: none;
     color: var(--main-color);
@@ -173,8 +173,6 @@ body {
 #blogs .rowItem * {
     font-family: "Cambria", Georgia, serif;
     margin: 10px;
-    padding-left: 10px;
-    padding-right: 0;
 }
 
 #blogs .rowItem img {
@@ -186,7 +184,7 @@ body {
 }
 
 #blogs .rowItem .title {
-    width: fit-content;
+    width: 100%;
     font-size: 2rem;
     color: #000000;
     border: none;
@@ -209,7 +207,6 @@ body {
     color: #000000;
     font-size: 1.1rem;
     cursor: pointer;
-    margin-left: 20px;
     width: fit-content;
     border-bottom: #000000 double 1px;
     border-top: #000000 double 1px;
