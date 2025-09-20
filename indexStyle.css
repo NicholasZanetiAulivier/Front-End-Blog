@@ -243,6 +243,10 @@ body {
     box-shadow: 2px 2px;
 }
 
+#reviews {
+    margin-bottom: 100px;
+}
+
 #reviews .title {
     margin-bottom: 0;
 }
@@ -371,7 +375,51 @@ body {
     box-shadow: 2px 2px;
 }
 
+
 footer {
+    padding-bottom: 50px;
     width: 100%;
-    height: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+}
+
+footer h1 {
+    margin: auto;
+    margin-top: 10px;
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Cooper';
+}
+
+footer #footerBigDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-family: var(--readable-text);
+}
+
+#webStuff,
+#contentStuff,
+#contactStuff {
+    width: 20%;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
