@@ -97,7 +97,7 @@ body {
 
 #banner {
     width: 100%;
-    height: 500px;
+    height: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,18 +114,18 @@ body {
     object-fit: cover;
     filter: brightness(50%);
     width: 100%;
-    height: 500px;
+    height: 30vw;
 }
 
 #banner .title {
-    font-size: 5rem;
+    font-size: 5vw;
     font-weight: bold;
     font-family: 'Cooper';
     color: #FFFFFF;
 }
 
 #banner .subtitle {
-    font-size: 2rem;
+    font-size: 1.7vw;
     font-weight: bold;
     font-family: 'Trebuchet MS', "Helvetica";
     color: #FFFFFF;
@@ -138,12 +138,12 @@ body {
 
 .container .title {
     margin: auto;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 2vw;
+    margin-bottom: 2.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     width: fit-content;
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: bold;
     font-family: 'Cooper';
     color: var(--main-color);
@@ -167,8 +167,8 @@ body {
 }
 
 #blogs .rowItem {
-    width: 400px;
-    height: 550px;
+    width: 25vw;
+    height: 30vw;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -176,8 +176,8 @@ body {
 
 #blogs .rowItem * {
     font-family: var(--readable-text);
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
     padding: 0;
 }
 
@@ -192,11 +192,11 @@ body {
 
 #blogs .rowItem .title {
     width: 100%;
-    min-height: 74px;
-    max-height: 111px;
+    min-height: 2vw;
+    max-height: 4vw;
     display: flex;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 1.3vw;
     color: #000000;
     border: none;
     overflow: hidden;
@@ -205,22 +205,22 @@ body {
 #blogs .rowItem .itemMeta {
     color: var(--grey-color);
     text-align: justify;
-    height: 21px;
-    font-size: 1.1rem;
+    height: 1.5vw;
+    font-size: 0.9vw;
     overflow: hidden;
 }
 
 #blogs .rowItem .itemDescription {
     text-align: justify;
-    font-size: 1.2rem;
-    height: 110px;
+    font-size: 1vw;
+    height: 5vw;
     overflow: hidden;
 }
 
 #blogs .rowItem .readMore {
     text-decoration: none;
     color: #000000;
-    font-size: 1.1rem;
+    font-size: 0.9vw;
     cursor: pointer;
     width: fit-content;
     border-bottom: #000000 double 1px;
@@ -234,17 +234,17 @@ body {
     text-align: center;
     color: var(--main-color);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     width: fit-content;
     margin: auto;
     display: block;
-    padding: 5px;
+    padding: 0.5vw;
     border: var(--main-color) 1px double;
     box-shadow: 2px 2px;
 }
 
 #reviews {
-    margin-bottom: 100px;
+    margin-bottom: 4vw;
 }
 
 #reviews .title {
@@ -262,10 +262,10 @@ body {
 .review {
     display: flex;
     width: 100%;
-    height: 300px;
+    height: 20vw;
     text-decoration: none;
     color: #000000;
-    margin-top: 20px;
+    margin-top: 1.5vw;
 }
 
 .preview {
@@ -290,8 +290,8 @@ body {
 }
 
 .preview .rightPart {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 2vw;
+    padding-right: 4vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -304,7 +304,7 @@ body {
     padding: 0;
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2vw;
     font-family: var(--readable-text);
     padding-bottom: 5px;
     border: none;
@@ -315,7 +315,7 @@ body {
 
 .preview .rightPart .description {
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1.2vw;
     font-family: var(--readable-text);
     overflow: hidden;
 }
@@ -332,7 +332,7 @@ body {
 .aspect {
     border-left: var(--grey-color) 1px solid;
     border-right: var(--grey-color) 1px solid;
-    height: 80px;
+    height: 6vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,20 +366,20 @@ body {
     text-align: center;
     color: var(--main-color);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     width: fit-content;
     margin: auto;
     display: block;
-    padding: 5px;
+    padding: 0.5vw;
     border: var(--main-color) 1px double;
     box-shadow: 2px 2px;
 }
 
 
 footer {
-    padding-bottom: 50px;
+    padding-bottom: 5vw;
     width: 100%;
-    height: 400px;
+    height: 20vw;
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
@@ -387,9 +387,10 @@ footer {
 
 footer h1 {
     margin: auto;
-    margin-top: 10px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     color: #FFFFFF;
-    font-size: 4rem;
+    font-size: 3vw;
     font-weight: bold;
     font-family: 'Cooper';
 }
@@ -399,7 +400,7 @@ footer #footerBigDiv {
     display: flex;
     justify-content: center;
     color: #FFFFFF;
-    font-size: 1.3rem;
+    font-size: 1.3vw;
     font-family: var(--readable-text);
 }
 
@@ -415,11 +416,13 @@ footer span {
 
 footer ul {
     list-style-type: none;
-    margin-top: 20px;
-    line-height: 30px;
+    margin-top: 1vw;
+    line-height: 1.5vw;
 }
 
 footer a {
     color: #FFFFFF;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 1200px) {}
