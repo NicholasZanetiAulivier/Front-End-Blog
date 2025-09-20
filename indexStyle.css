@@ -37,8 +37,12 @@ body {
     justify-content: space-between;
 }
 
+#navHide {
+    display: none;
+}
+
 #navTitle {
-    font-size: 2rem;
+    font-size: 2.4vw;
     margin-left: 15%;
     font-weight: bold;
     font-family: 'Cooper';
@@ -53,11 +57,11 @@ body {
 }
 
 .navLinks li {
-    font-size: 1.3em;
+    font-size: 1.3vw;
     font-weight: bold;
     font-family: "Times New Roman", "Verdana";
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .navLinks li a {
@@ -70,16 +74,16 @@ body {
     display: flex;
     position: relative;
     align-items: center;
-    margin-right: 100px;
+    margin-right: 9vw;
 }
 
 .search input {
-    height: 2em;
+    height: 2.3vw;
     border-color: #000000;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    padding: 5px;
-    font-size: 100%;
+    padding: 0.5vw;
+    font-size: 1.2vw;
     background-color: transparent;
     color: #000000;
 }
@@ -91,8 +95,8 @@ body {
 .search img {
     color: #EBEBEB;
     background-color: transparent;
-    width: 30px;
-    margin-left: 10px;
+    width: 2.5vw;
+    margin-left: 1vw;
 }
 
 #banner {
@@ -339,7 +343,7 @@ body {
     width: 80%;
     border-radius: 10px;
     font-family: var(--readable-text);
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 
@@ -425,4 +429,191 @@ footer a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1200px) {}
+/*Laptops and PCs*/
+@media only screen and (max-width: 1200px) {
+    .navLinks li {
+        font-size: 1.5vw;
+    }
+
+    #blogs .row:nth-child(3) {
+        display: none;
+    }
+
+    #blogs #columns {
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+    }
+
+    #blogs .row {
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #blogs .rowItem {
+        width: 30vw;
+        height: 36vw;
+    }
+
+    #blogs .rowItem .title {
+        max-height: 5vw;
+        font-size: 1.8vw;
+    }
+
+    #blogs .rowItem .itemMeta {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #blogs .rowItem .itemDescription {
+        font-size: 1.3vw;
+        height: 7vw;
+    }
+
+    .reviewColumn {
+        width: 70%;
+    }
+}
+
+/*Tablets and such*/
+@media only screen and (max-width: 992px) {
+    #blogs .row:nth-child(3) {
+        display: none;
+    }
+
+    #blogs #columns {
+        width: 100%;
+    }
+
+    #blogs .row {
+        width: 50%;
+    }
+
+    #blogs .rowItem {
+        width: 40vw;
+        height: 60vw;
+    }
+
+    #blogs .rowItem .title {
+        max-height: 10vw;
+        font-size: 3vw;
+    }
+
+    #blogs .rowItem .itemMeta {
+        font-size: 2vw;
+        height: 2.5vw;
+    }
+
+    #blogs .rowItem .itemDescription {
+        font-size: 2vw;
+        height: 15vw;
+    }
+
+    #blogs .rowItem .readMore {
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    #blogs #moreBlogs {
+        font-size: 3vw;
+        margin-bottom: 5vw;
+    }
+
+    .container .title {
+        font-size: 4vw;
+    }
+
+
+    #navTitle {
+        font-size: 4vw;
+        margin-left: 5%;
+    }
+
+    .navLinks li {
+        font-size: 2vw;
+    }
+
+
+    .search {
+        margin-right: 1vw;
+    }
+
+    .search input {
+        height: 3vw;
+        font-size: 1.5vw;
+    }
+
+    .search button {
+        background: none;
+    }
+
+    .search img {
+        width: 3vw;
+        margin-left: 1vw;
+    }
+
+    .reviewColumn {
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .review {
+        height: 30vw;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .preview {
+        width: 100%;
+    }
+
+    .preview .rightPart .title {
+        font-size: 3vw;
+    }
+
+    .preview .rightPart .description {
+        font-size: 2vw;
+    }
+
+    .aspects {
+        display: none;
+    }
+
+    #reviews #moreReviews {
+        font-size: 3vw;
+        margin-bottom: 5vw;
+    }
+
+    footer {
+        height: 40vw;
+    }
+
+    footer h1 {
+        font-size: 5vw;
+    }
+
+    footer #footerBigDiv {
+        font-size: 2.5vw;
+    }
+
+    #webStuff,
+    #contentStuff,
+    #contactStuff {
+        width: 30%;
+    }
+
+    footer ul {
+        list-style-type: none;
+        margin-top: 1vw;
+        line-height: 3vw;
+    }
+}
+
+/*NavBar breakpoint*/
+@media only screen and (max-width: 768px) {}
+
+/*Phones*/
+@media only screen and (max-width: 600px) {}
