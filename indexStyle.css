@@ -626,6 +626,14 @@ footer a {
 /*NavBar breakpoint*/
 @media only screen and (max-width: 768px) {
 
+    .topnavbar {
+        background-color: var(--main-color);
+        backdrop-filter: none;
+        color: #FFFFFF;
+        overflow: visible;
+    }
+
+
     #navTitle {
         margin: auto;
         font-size: 5vw;
@@ -643,6 +651,68 @@ footer a {
         width: 7vw;
         margin: 0;
         right: 5vw;
+    }
+
+    .navLinks {
+        position: fixed;
+        background-color: var(--main-color);
+        padding: 2vw;
+        top: 13vw;
+        right: 0;
+        width: 40vw;
+        height: fit-content;
+        height: fit-content;
+    }
+
+    .search {
+        position: absolute;
+        background-color: var(--main-color);
+        height: fit-content;
+        right: 0;
+        top: 8vw;
+        z-index: 2001;
+        width: 40vw;
+        margin: 0;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    #navSearchInput {
+        background-color: #FFFFFF;
+        border: #000000 1px solid;
+        border-radius: 10px;
+        margin-left: 4vw;
+        z-index: 2001;
+        font-size: 3vw;
+        padding: 2vw;
+        width: 70%;
+    }
+
+    #navSearchButton {
+        margin-right: 0;
+        padding-right: 0;
+        z-index: 2001;
+    }
+
+    .navLinks li a {
+        color: #FFFFFF;
+        font-size: 3vw;
+    }
+
+    #navHide:has(input[type="checkbox"]:checked)+ul {
+        display: block;
+    }
+
+    #navHide:has(input[type="checkbox"]:checked)~.search {
+        display: block;
+    }
+
+    #navHide input[type="checkbox"]:checked~img:nth-child(3) {
+        display: block;
+    }
+
+    #navHide input[type="checkbox"]:checked~img:nth-child(2) {
+        display: none;
     }
 
     .navLinks,
