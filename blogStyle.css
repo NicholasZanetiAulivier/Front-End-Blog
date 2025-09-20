@@ -22,6 +22,7 @@ body {
     --readable-text: "Cambria", Georgia, serif;
 }
 
+
 .topnavbar {
     z-index: 1000;
     width: 100%;
@@ -58,6 +59,11 @@ body {
     margin-left: 15%;
     font-weight: bold;
     font-family: 'Cooper';
+}
+
+#navTitle a {
+    text-decoration: none;
+    color: var(--main-color);
 }
 
 .navLinks {
@@ -485,6 +491,10 @@ footer a {
         display: none;
     }
 
+    #navTitle a {
+        color: #FFFFFF;
+    }
+
 
 }
 
@@ -531,6 +541,48 @@ footer a {
 
     .navLinks li a {
         font-size: 5vw;
+    }
+
+    .content {
+        margin-top: 1vw;
+    }
+
+    .content #title {
+        font-size: 5.5vw;
+    }
+
+    .content #credits {
+        font-size: 2.5vw;
+    }
+
+    .paragraphs p {
+        font-size: 3vw;
+    }
+
+    #comments {
+        width: 100%;
+    }
+
+    #comments .bar {
+        font-size: 5vw;
+    }
+
+    #comments .template,
+    #comments .comment {
+        height: 30vw;
+        width: 90%;
+    }
+
+    #comments .template #commentContent {
+        font-size: 3vw;
+    }
+
+    #comments .comment .commenter .commenterName {
+        font-size: 4vw;
+    }
+
+    #comments .comment p {
+        font-size: 3vw;
     }
 
     footer {
