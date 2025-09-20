@@ -135,6 +135,7 @@ body {
 .container .title {
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 50px;
     padding-left: 10px;
     padding-right: 10px;
     width: fit-content;
@@ -145,7 +146,7 @@ body {
     border-bottom: #235ef1 2px solid;
 }
 
-#blogs #columns3 {
+#blogs #columns {
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -157,14 +158,12 @@ body {
     justify-content: space-around;
     height: fit-content;
     margin: auto;
-    width: 90%;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    width: 80%;
 }
 
 #blogs .rowItem {
-    width: 500px;
-    height: 750px;
+    width: 400px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -173,11 +172,13 @@ body {
 #blogs .rowItem * {
     font-family: "Cambria", Georgia, serif;
     margin: 10px;
+    padding: 0;
 }
 
 #blogs .rowItem img {
-    width: 500px;
-    height: 338px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
     object-fit: cover;
     padding: 0;
     margin: 0;
@@ -185,24 +186,32 @@ body {
 
 #blogs .rowItem .title {
     width: 100%;
-    font-size: 2rem;
+    min-height: 74px;
+    max-height: 111px;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
     color: #000000;
     border: none;
+    overflow: hidden;
 }
 
 #blogs .rowItem .itemMeta {
     color: var(--grey-color);
     text-align: justify;
+    height: 21px;
     font-size: 1.1rem;
+    overflow: hidden;
 }
 
 #blogs .rowItem .itemDescription {
     text-align: justify;
     font-size: 1.2rem;
+    height: 110px;
+    overflow: hidden;
 }
 
 #blogs .rowItem .readMore {
-    padding-left: 0;
     text-decoration: none;
     color: #000000;
     font-size: 1.1rem;
@@ -211,4 +220,19 @@ body {
     border-bottom: #000000 double 1px;
     border-top: #000000 double 1px;
     background-color: #FFFFFF;
+}
+
+#blogs #moreBlogs {
+    text-decoration: none;
+    font-family: "Cambria", Georgia, serif;
+    text-align: center;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: fit-content;
+    margin: auto;
+    display: block;
+    padding: 5px;
+    border: var(--main-color) 1px double;
+    box-shadow: 2px 2px;
 }
