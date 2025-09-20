@@ -316,6 +316,55 @@ footer a {
         margin-left: 1vw;
     }
 
+    .content {
+        margin: auto;
+        margin-top: 8vw;
+        width: 80%;
+    }
+
+    .content #title {
+        font-size: 4vw;
+    }
+
+    .content #credits {
+        font-size: 1.3vw;
+    }
+
+    .paragraphs p {
+        font-size: 1.8vw;
+        margin-bottom: 4vw;
+    }
+
+    #comments {
+        width: 90%;
+    }
+
+    #comments .bar {
+        padding: 1vw;
+        padding-left: 3vw;
+        font-size: 3vw;
+    }
+
+    #comments .template,
+    #comments .comment {
+        height: 15vw;
+        width: 90%;
+    }
+
+    #comments .template #commentContent {
+        height: 80%;
+        width: 70%;
+        font-size: 1.3vw;
+    }
+
+    #comments .comment .commenter .commenterName {
+        font-size: 2vw;
+    }
+
+    #comments .comment p {
+        font-size: 1.3vw;
+    }
+
     footer {
         height: 40vw;
     }
