@@ -39,6 +39,17 @@ body {
 
 #navHide {
     display: none;
+    position: absolute;
+}
+
+#navHide img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+#navHide input {
+    display: none;
 }
 
 #navTitle {
@@ -613,7 +624,34 @@ footer a {
 }
 
 /*NavBar breakpoint*/
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+
+    #navTitle {
+        margin: auto;
+        font-size: 5vw;
+    }
+
+    #navHide img:nth-child(3) {
+        display: none;
+    }
+
+    #navHide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7vw;
+        width: 7vw;
+        margin: 0;
+        right: 5vw;
+    }
+
+    .navLinks,
+    .search {
+        display: none;
+    }
+
+
+}
 
 /*Phones*/
 @media only screen and (max-width: 600px) {}
