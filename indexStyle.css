@@ -207,8 +207,7 @@ body {
 
 #blogs .rowItem .title {
     width: 100%;
-    min-height: 2vw;
-    max-height: 4vw;
+    height: 4vw;
     display: flex;
     align-items: center;
     font-size: 1.3vw;
@@ -469,7 +468,7 @@ footer a {
     }
 
     #blogs .rowItem .title {
-        max-height: 5vw;
+        height: 5vw;
         font-size: 1.8vw;
     }
 
@@ -508,7 +507,7 @@ footer a {
     }
 
     #blogs .rowItem .title {
-        max-height: 10vw;
+        height: 10vw;
         font-size: 3vw;
     }
 
@@ -781,11 +780,12 @@ footer a {
 
     #blogs .rowItem {
         width: 80vw;
-        height: 100vw;
+        height: 110vw;
+        padding-bottom: 5vw;
     }
 
     #blogs .rowItem .title {
-        max-height: 40vw;
+        height: 40vw;
         font-size: 6vw;
     }
 
@@ -796,7 +796,7 @@ footer a {
 
     #blogs .rowItem .itemDescription {
         font-size: 3.5vw;
-        height: 20vw;
+        height: 40vw;
     }
 
     #blogs .rowItem .readMore {
@@ -806,6 +806,7 @@ footer a {
     #blogs #moreBlogs {
         font-size: 6vw;
         margin-bottom: 6vw;
+        margin-top: 6vw;
     }
 
     .container .title {
@@ -819,16 +820,16 @@ footer a {
     }
 
     .review {
-        height: 100vw;
+        height: 120vw;
     }
 
     .preview {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
     }
 
     .preview .leftPart img {
-        width: 90%;
+        width: 100%;
         align-self: center;
         aspect-ratio: 4 / 3;
         object-fit: cover;
@@ -841,7 +842,7 @@ footer a {
     }
 
     .preview .rightPart .description {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     #reviews #moreReviews {
