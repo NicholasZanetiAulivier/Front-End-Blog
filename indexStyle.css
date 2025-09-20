@@ -660,8 +660,6 @@ footer a {
         top: 13vw;
         right: 0;
         width: 40vw;
-        height: fit-content;
-        height: fit-content;
     }
 
     .search {
@@ -724,4 +722,159 @@ footer a {
 }
 
 /*Phones*/
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+
+    body {
+        padding-top: 15vw;
+    }
+
+    .topnavbar #navTitle {
+        font-size: 10vw;
+    }
+
+    .topnavbar {
+        top: 0;
+    }
+
+    #navHide {
+        height: 10vw;
+        width: 10vw;
+        margin: 0;
+        right: 5vw;
+    }
+
+    .navLinks {
+        top: 20vw;
+        width: 50vw;
+    }
+
+    .search {
+        top: 14vw;
+        width: 50vw;
+    }
+
+    #navSearchInput {
+        font-size: 4vw;
+        padding: 3vw;
+    }
+
+    #navSearchButton img {
+        width: 4vw;
+    }
+
+    .navLinks li a {
+        font-size: 5vw;
+    }
+
+    #banner {
+        display: none;
+    }
+
+    #blogs #columns {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #blogs .row {
+        width: 100%;
+    }
+
+    #blogs .rowItem {
+        width: 80vw;
+        height: 100vw;
+    }
+
+    #blogs .rowItem .title {
+        max-height: 40vw;
+        font-size: 6vw;
+    }
+
+    #blogs .rowItem .itemMeta {
+        font-size: 3vw;
+        height: 5vw;
+    }
+
+    #blogs .rowItem .itemDescription {
+        font-size: 3.5vw;
+        height: 20vw;
+    }
+
+    #blogs .rowItem .readMore {
+        font-size: 5vw;
+    }
+
+    #blogs #moreBlogs {
+        font-size: 6vw;
+        margin-bottom: 6vw;
+    }
+
+    .container .title {
+        font-size: 10vw;
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+    }
+
+    .reviewColumn {
+        width: 90%;
+    }
+
+    .review {
+        height: 100vw;
+    }
+
+    .preview {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .preview .leftPart img {
+        width: 90%;
+        align-self: center;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 20px;
+        height: auto;
+    }
+
+    .preview .rightPart .title {
+        font-size: 6vw;
+    }
+
+    .preview .rightPart .description {
+        font-size: 3vw;
+    }
+
+    #reviews #moreReviews {
+        font-size: 6vw;
+        margin-bottom: 6vw;
+    }
+
+    footer {
+        height: fit-content;
+
+    }
+
+    footer h1 {
+        font-size: 10vw;
+    }
+
+    footer #footerBigDiv {
+        flex-direction: column;
+        align-items: center;
+        font-size: 4vw;
+    }
+
+    #webStuff,
+    #contentStuff,
+    #contactStuff {
+        height: fit-content;
+        align-items: center;
+        text-align: center;
+        padding-top: 5vw;
+    }
+
+    footer ul {
+        margin-top: 2vw;
+        line-height: 4.5vw;
+    }
+}
