@@ -632,7 +632,6 @@ footer a {
         overflow: visible;
     }
 
-
     #navTitle {
         margin: auto;
         font-size: 5vw;
@@ -726,6 +725,11 @@ footer a {
     body {
         padding-top: 15vw;
     }
+
+    .container {
+        margin-top: 10vw;
+    }
+
 
     .topnavbar #navTitle {
         font-size: 10vw;
